@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sm-eco-10060.org/schema/member.schema.json",
+  "title": "SM-ECO-10060 member",
+  "description": "One sovereign member of SM-ECO-10060, the jurisdiction layer for capital-markets issuer records: its code, its duty namespace, its canonical node, and the Allooloo node, record door, Agent Card and duty line it carries (null where no Allooloo node serves the market; the signal on any request is then ACM-404 NOT_FOUND).",
+  "type": "object",
+  "required": ["code", "namespace", "jurisdiction", "member", "canonical_node", "allooloo_node", "record_door", "agent_card", "duty"],
+  "additionalProperties": false,
+  "properties": {
+    "code": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "ISO 3166-1 alpha-2 code of the member (EU for the European Union bloc)." },
+    "namespace": { "type": "string", "pattern": "^[A-Z]{2}-ECO-10060$", "description": "The member's duty namespace." },
+    "jurisdiction": { "type": "string", "description": "The jurisdiction's name." },
+    "member": { "type": "integer", "minimum": 1, "maximum": 49, "description": "Registry order (EU = 1 … ZA = 49)." },
+    "canonical_node": { "type": "string", "format": "uri", "description": "The member's canonical reference surface, <code>-eco-10060.org." },
+    "allooloo_node": { "type": ["string", "null"], "description": "The Allooloo node that serves the market's issuer records (for example fr-cm-kg), or the bloc door for EU; null where no node serves the market." },
+    "record_door": { "type": ["string", "null"], "format": "uri", "description": "The MCP door of that node; null where no node serves the market." },
+    "agent_card": { "type": ["string", "null"], "format": "uri", "description": "The node's Agent Card; null where no node serves the market." },
+    "duty": { "type": ["string", "null"], "description": "The duty line as the node publishes it (list_nodes); null where no node serves the market." }
+  }
+}
