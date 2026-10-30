@@ -1,101 +1,75 @@
-# SM-ECO-10060 — Sovereign Manifest
+# SM-ECO-10060
 
-Reference site: **https://sm-eco-10060.org/** — this repository is the manifest as a document. Licence: MIT (see `LICENSE`). Cite it with `CITATION.cff`.
+**SM-ECO-10060 defines the jurisdiction binding of a signed capital-product record and the market chapter from which that binding is published. Each chapter preserves the market's duties, authorities, sources, dates, conditions and exact section versions, with the producing node's signature. The jurisdiction namespace maps explicitly to the market value carried in the receipt. Member pages, node pages and specialised readouts derive from the same immutable chapter; ACM rule revisions point to the chapter evidence that produced them. SM-ECO makes the market context recoverable across the family while keeping separate the responsibilities of sourced content, clearance, orderability, venue reference and proof of the read.**
 
-SM-ECO-10060 — the jurisdiction layer for capital-markets issuer records. 49 sovereign members, one duty namespace each.
+Reference site: **https://sm-eco-10060.org/** — canonical text v1.0 (30 October 2026).
 
-Sovereign Manifest of Electronic Compliance Objects · Jurisdiction before resolution.
+## The contract
 
-The same issuer can face different duties in France, Japan, Brazil or the United States. SM-ECO-10060 is the jurisdiction layer that keeps those markets from being collapsed into one generic answer. It defines 49 sovereign jurisdiction members plus the SM apex — 50 nodes. Each jurisdiction is an authority for its own rule-set namespace. Every Allooloo record states the jurisdiction it was read under and the duty that applies there. The agent can be anywhere. The record is territorial.
+SM-ECO-10060 defines the jurisdiction binding of a signed record. It owns the market field carried in the receipt, the jurisdiction namespace, and the relationship between a record, its market's duty and the responsible regulator. Its central object is the market chapter: the sourced, dated and versioned body of information an artificial-intelligence (AI) agent needs to understand the obligations and constraints relevant to its specified activity in that market.
 
-What SM-ECO-10060 answers: Not: Is this issuer compliant? First: Which jurisdiction governs this evaluation? Once that boundary is established, deterministic resolution can occur against the correct rules. Issuers resolve by ticker, ISIN (International Securities Identification Number) or LEI (Legal Entity Identifier) at mcp.getissuer.ai.
-Allooloo Technologies Corp. · 34 market nodes in 24 Azure regions · records served in-country.
+The Book of Markets holds these chapters as structured records. A chapter brings together the market's authorities, applicable duties, disclosure infrastructure, product and client constraints, venue reference information and sustainability-disclosure regime. Each field preserves the evidence behind its value. Each section has a defined schema and an immutable version. A member page is a readout of its chapter.
 
-Member registry (code · namespace · jurisdiction · canonical node · Allooloo node · record door):
-- EU · EU-ECO-10060 · European Union · https://eu-eco-10060.org/ · eu-cm-kg.ai (bloc door; each European member carries its own node) · https://eu-issuer.ai/
-- FR · FR-ECO-10060 · France · https://fr-eco-10060.org/ · fr-cm-kg · https://mcp.fr-cm-kg.ai/mcp
-- DE · DE-ECO-10060 · Germany · https://de-eco-10060.org/ · de-cm-kg · https://mcp.de-cm-kg.ai/mcp
-- ES · ES-ECO-10060 · Spain · https://es-eco-10060.org/ · es-cm-kg · https://es.eu-cm-kg.ai/mcp
-- IT · IT-ECO-10060 · Italy · https://it-eco-10060.org/ · it-cm-kg · https://it.eu-cm-kg.ai/mcp
-- NL · NL-ECO-10060 · Netherlands · https://nl-eco-10060.org/ · nl-cm-kg · https://mcp.nl-cm-kg.ai/mcp
-- PL · PL-ECO-10060 · Poland · https://pl-eco-10060.org/ · pl-cm-kg · https://pl.eu-cm-kg.ai/mcp
-- CH · CH-ECO-10060 · Switzerland · https://ch-eco-10060.org/ · ch-cm-kg · https://mcp.ch-cm-kg.ai/mcp
-- UK · UK-ECO-10060 · United Kingdom · https://uk-eco-10060.org/ · uk-cm-kg · https://mcp.uk-cm-kg.ai/mcp
-- BE · BE-ECO-10060 · Belgium · https://be-eco-10060.org/ · be-cm-kg · https://be.eu-cm-kg.ai/mcp
-- PT · PT-ECO-10060 · Portugal · https://pt-eco-10060.org/ · pt-cm-kg · https://pt.eu-cm-kg.ai/mcp
-- AT · AT-ECO-10060 · Austria · https://at-eco-10060.org/ · at-cm-kg · https://at.eu-cm-kg.ai/mcp
-- IE · IE-ECO-10060 · Ireland · https://ie-eco-10060.org/ · ie-cm-kg · https://ie.eu-cm-kg.ai/mcp
-- CZ · CZ-ECO-10060 · Czech Republic · https://cz-eco-10060.org/ · cz-cm-kg · https://cz.eu-cm-kg.ai/mcp
-- DK · DK-ECO-10060 · Denmark · https://dk-eco-10060.org/ · dk-cm-kg · https://dk.eu-cm-kg.ai/mcp
-- SE · SE-ECO-10060 · Sweden · https://se-eco-10060.org/ · se-cm-kg · https://se.eu-cm-kg.ai/mcp
-- FI · FI-ECO-10060 · Finland · https://fi-eco-10060.org/ · fi-cm-kg · https://fi.eu-cm-kg.ai/mcp
-- NO · NO-ECO-10060 · Norway · https://no-eco-10060.org/ · no-cm-kg · https://no.eu-cm-kg.ai/mcp
-- GR · GR-ECO-10060 · Greece · https://gr-eco-10060.org/ · gr-cm-kg · https://gr.eu-cm-kg.ai/mcp
-- US · US-ECO-10060 · United States · https://us-eco-10060.org/ · us-cm-kg · https://mcp.us-cm-kg.ai/mcp
-- CA · CA-ECO-10060 · Canada · https://ca-eco-10060.org/ · ca-cm-kg · https://mcp.ca-cm-kg.ai/mcp
-- MX · MX-ECO-10060 · Mexico · https://mx-eco-10060.org/ · mx-cm-kg · https://mcp.mx-cm-kg.ai/mcp
-- BR · BR-ECO-10060 · Brazil · https://br-eco-10060.org/ · br-cm-kg · https://mcp.br-cm-kg.ai/mcp
-- AR · AR-ECO-10060 · Argentina · https://ar-eco-10060.org/ · — · —
-- CL · CL-ECO-10060 · Chile · https://cl-eco-10060.org/ · — · —
-- CO · CO-ECO-10060 · Colombia · https://co-eco-10060.org/ · — · —
-- CR · CR-ECO-10060 · Costa Rica · https://cr-eco-10060.org/ · — · —
-- DO · DO-ECO-10060 · Dominican Republic · https://do-eco-10060.org/ · — · —
-- EC · EC-ECO-10060 · Ecuador · https://ec-eco-10060.org/ · — · —
-- GT · GT-ECO-10060 · Guatemala · https://gt-eco-10060.org/ · — · —
-- PA · PA-ECO-10060 · Panama · https://pa-eco-10060.org/ · — · —
-- PE · PE-ECO-10060 · Peru · https://pe-eco-10060.org/ · — · —
-- UY · UY-ECO-10060 · Uruguay · https://uy-eco-10060.org/ · — · —
-- AU · AU-ECO-10060 · Australia · https://au-eco-10060.org/ · au-cm-kg · https://mcp.au-cm-kg.ai/mcp
-- JP · JP-ECO-10060 · Japan · https://jp-eco-10060.org/ · jp-cm-kg · https://mcp.jp-cm-kg.ai/mcp
-- KR · KR-ECO-10060 · South Korea · https://kr-eco-10060.org/ · kr-cm-kg · https://mcp.kr-cm-kg.ai/mcp
-- SG · SG-ECO-10060 · Singapore · https://sg-eco-10060.org/ · sg-cm-kg · https://mcp.sg-cm-kg.ai/mcp
-- IN · IN-ECO-10060 · India · https://in-eco-10060.org/ · in-cm-kg · https://mcp.in-cm-kg.ai/mcp
-- ID · ID-ECO-10060 · Indonesia · https://id-eco-10060.org/ · — · —
-- MY · MY-ECO-10060 · Malaysia · https://my-eco-10060.org/ · — · —
-- PH · PH-ECO-10060 · Philippines · https://ph-eco-10060.org/ · — · —
-- TH · TH-ECO-10060 · Thailand · https://th-eco-10060.org/ · — · —
-- VN · VN-ECO-10060 · Vietnam · https://vn-eco-10060.org/ · — · —
-- AE · AE-ECO-10060 · United Arab Emirates · https://ae-eco-10060.org/ · ae-cm-kg · https://mcp.ae-cm-kg.ai/mcp
-- SA · SA-ECO-10060 · Saudi Arabia · https://sa-eco-10060.org/ · — · —
-- IL · IL-ECO-10060 · Israel · https://il-eco-10060.org/ · — · —
-- TR · TR-ECO-10060 · Turkey · https://tr-eco-10060.org/ · — · —
-- MA · MA-ECO-10060 · Morocco · https://ma-eco-10060.org/ · — · —
-- ZA · ZA-ECO-10060 · South Africa · https://za-eco-10060.org/ · — · —
+The chapter begins with the activity and the duty. An agent must identify the product and subject, the actor and client category, the applicable jurisdiction, the governing revision, the information it must read, the restrictions it must test and the evidence it must retain. The chapter supplies the market context for those questions. Product-specific facts and client-specific assessments remain referenced records, never invented market-wide answers.
 
-The Seven Signals — ACM-68000: ACM-000 NOT_APPLICABLE · ACM-200 ALLOW · ACM-300 CONDITIONAL · ACM-403 RESTRICT · ACM-404 NOT_FOUND · ACM-451 ESCALATE · ACM-500 SYSTEM_ERROR (source: https://acm-68000.org/signals.json)
+Every published chapter preserves subject and market scope, provenance, source observation time, applicability dates, revision identity and producing-node attribution. A field can be present, not found, unavailable, not applicable or conflicting without those states being collapsed. Sourceable information relevant to the duty stays in the chapter even when it has no place on the current page.
 
-Connection test — one issuer record, served by its own market's door. No API key. No account.
-curl "https://mcp.fr-cm-kg.ai/record/XPAR/FR0000120271"
-{
-  "cmr": "fr-cm-kg/XPAR/FR0000120271",
-  "node": "fr-cm-kg",
-  "as_of": "2026-10-27",
-  "version": 1,
-  "identity": {
-  …
+## What the standard does not do
 
-Standalone standard. SM-ECO-10060 is the jurisdiction layer of the Allooloo issuer record. It pairs with ACM-68000 (the signal vocabulary) and with the per-market ECO pages (fr-eco.ai, de-eco.ai …) that state each market's duty. Open standard · MIT licence.
+A chapter is a structured representation of sourced information. It does not certify a product, establish the truth of a source, give an individual legal opinion, or guarantee that every applicable obligation has been captured. Its declared scope and evidence gaps determine what it can support.
 
-Sovereign
+Finding a regulator, venue, filing or endpoint does not authorise an action. Missing evidence does not establish a prohibition. A failed source request does not establish that a rule is absent. A chapter supports a clearance evaluation only when its evidence, scope and rule references satisfy the evaluating profile.
 
-The record is read in the issuer's country, signed in the issuer's country, served from the issuer's country. The agent can be anywhere. The data does not move.
+Jurisdiction binding does not by itself prove data residency, regulatory recognition or an actor's entitlement. Hosting location, listing market, issuer domicile, client location and applicable regime are distinct attributes; cross-border applicability is represented through explicit references and conditions.
 
-Agents compound what they read. An agent built on a located, signed record is traceable at every hop; an agent built on an unlocated feed compounds the feed's errors across every agent downstream. Build on the local, signed record, or build the mess in.
+Artificial intelligence makes mistakes. Every field links the page it was read on. Read the regulator.
 
-Jurisdiction before resolution: the first question is which duty governs, and the manifest answers it before any field is read.
+## Who signs
 
-The estate runs itself: 34 nodes, 24 Azure regions, a standby in a second cloud, Ops Agents overnight. Nobody is at the keyboard.
+The producing market node signs its chapter and its specialised section records under the record key, following the ECO-10060 content contract. Attribution names the producing node inside the signed payload. Shared regime material is referenced from its separately signed authoritative record; a market node never presents a shared revision as its own original publication.
 
-Source: github.com/allooloo/sm-eco-10060
+A national rule revision is produced by the market's node; a shared rule-family revision is produced by the apex. Both use the record key. Market chapters reference the exact shared revision and record national applicability, additions or exceptions with their own evidence.
 
-Doors: listed issuers https://mcp.getissuer.ai/mcp · receipts https://mcp.rco-a2a.ai/mcp
-Standards held: sm-eco-10060.org · acm-68000.org · rco-a2a.ai
-Machine surfaces: /protocol.json · /signals.json · /nodes.json · /health.json · /dataset.jsonld · /llms.txt · /index.md · /auth.md · /.well-known/agent-card.json · /.well-known/ai-catalog.json · /.well-known/api-catalog · /.well-known/acm-68000.json · /.well-known/security.txt
-Operator: Allooloo Technologies Corp. · Standard held by Allooloo Technologies Corp. · Licence: MIT
-Roster read at build: 2026-10-28T07:05:51Z (list_nodes, 34 live nodes, 24 Azure regions)
+RCO-10060 separately governs the receipt, signed by the receipt door under the receipt key. The receipt carries the deployed market value and the applied rule_version; its answer_hash binds it to the exact signed answer supplied. The record key signs content; the receipt key signs the read. Neither signs the other's object.
 
-## Files
+## The arrow
 
-- `registry.json` — the 49 members in registry order: code, namespace, jurisdiction, canonical node, Allooloo node, record door, Agent Card, duty (the line as the node publishes it; `null` where no Allooloo node serves the market). Rewritten by the nightly rebuild (ECO-OPS-01) when the roster moves.
-- `signals.json` — the seven ACM-68000 signals the member pages carry (source acm-68000.org).
-- `schema/member.schema.json` — the member record's schema.
+listed security  →  record (ECO-10060, the node)  →  market and duty (SM-ECO-10060, the chapter)  →  rule (ACM-68000)  →  whether (AIO)  →  where (AMP)  →  receipt (RCO-10060, under every door)
+
+A dependency model, not a ladder. ECO supplies attributable content; SM-ECO supplies jurisdiction and duty context; ACM-68000 supplies rule revisions and the clearance vocabulary; AI Orderability (AIO) supplies the structured product, market and client-class outcome; the Agentic Market Protocol (AMP) supplies venue reference information and, only under a separately evidenced clearance profile, route resolution; CPG-68000 is the umbrella.
+
+AIO may require venue restrictions before it can conclude. Venue discovery can precede clearance, while an actionable route requires the relevant clearance and orderability results. Sustainability disclosure (ESG) is a specialised ECO record and a rule family in ACM, not a tier; it supplies evidence for a defined sustainability condition and never a generic sustainable outcome.
+
+## The thing SM-ECO owns
+
+The jurisdiction namespace identifies the member and its scope. The receipt's market field keeps the deployed representation. Namespace and receipt value are explicitly mapped in the fleet registry; a richer namespace never silently replaces a deployed receipt value. Country, jurisdiction and venue identifiers are never used interchangeably.
+
+The chapter is the durable source for the member page, the product node page and the per-market sections of the other standards. Protocol membership and live product service are separate layers with independent lifecycle states. Their addresses come from the fleet registry and are never constructed from a country code.
+
+A chapter version is an immutable manifest naming exact section versions. Every section is immutable once written. A change produces a new version with a supersedes relationship and never overwrites the earlier one. An unchanged section may be referenced unchanged by a successor chapter. Historical versions remain recoverable for the records and receipts that refer to them.
+
+A chapter version is the evidence event an ACM rule revision points at. The rule reference names the exact chapter version, section and evidence from which the rule was produced. A changed observation or calendar field creates a new chapter version but not, by itself, a new duty revision; a substantive rule or binding change creates a new immutable rule revision linked to its source chapter event.
+
+Chapter content is committed first; rule revisions then reference that immutable content; a later chapter manifest may reference those revisions. A revision never depends on its own digest through a chapter that embeds the same revision. The implementation publishes the exact reference and hashing profile.
+
+## Publication discipline
+
+One approved schema and one sourced record feed every readout. Readers populate the Book on a declared cadence, with additional passes for detected changes. The publication rail reads accepted chapter versions; pages conduct no searches of their own and introduce no unsupported values.
+
+Each reading run records the source set, observation time, success or failure, changed fields, unresolved gaps and conflicts. A failed run never erases the last valid chapter or presents its observations as fresh; readers keep the last accepted record with visible age and failure status until a successor is validated.
+
+The rail publishes a consistent chapter selection across related surfaces and makes each surface's source version inspectable. Validation rejects mismatched markets, broken references, missing provenance and invalid signatures. A partial publication is reported as drift, never concealed by updating displayed dates.
+
+No coverage total, member ordinal or inventory total appears in authored prose; generated displays read the record. Acronyms are expanded on first use; definitions stay stable; reading guides index authoritative resources and add no doctrine. Publication supports discovery and grounded interpretation; it guarantees neither model training inclusion nor regulatory recognition.
+
+The sequence is mission, schema, source reading, field population, validation, publication. A semantic amendment names its compatibility and affected schemas. Standard version, chapter version, section version, rule revision and deployment version stay distinct.
+
+## Machine files
+
+- registry.json — the members in registry order (written by the nightly eco-ops agent)
+- https://sm-eco-10060.org/nodes.json · /protocol.json · /llms.txt
+- the Book of Markets chapters: one chapter manifest per market (C:\ALLOOLOO\BOOK, mirrored to the ops store)
+
+---
+
+Standard held by Allooloo Technologies Corp. · Open standard, MIT licence.
