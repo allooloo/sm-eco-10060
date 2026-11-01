@@ -4,7 +4,7 @@
   "operator": "Allooloo Technologies Corp.",
   "licence": "MIT",
   "members": 55,
-  "roster_read_at": "2026-10-30T23:46:30Z",
+  "roster_read_at": "2026-11-01T03:00:32Z",
   "roster_source": "https://mcp.getissuer.ai/mcp list_nodes",
   "registry": [
     {
@@ -93,7 +93,7 @@
       "allooloo_node": "ch-cm-kg",
       "record_door": "https://mcp.ch-cm-kg.ai/mcp",
       "agent_card": "https://agent.ch-cm-kg.ai/.well-known/agent-card.json",
-      "duty": "FinSA product duties"
+      "duty": "Zeitpunkt und Form der Informationen"
     },
     {
       "code": "UK",
@@ -379,7 +379,7 @@
       "allooloo_node": "au-cm-kg",
       "record_door": "https://mcp.au-cm-kg.ai/mcp",
       "agent_card": "https://agent.au-cm-kg.ai/.well-known/agent-card.json",
-      "duty": "DDO (Design and Distribution Obligations)"
+      "duty": "Prepare a TMD"
     },
     {
       "code": "JP",
@@ -412,7 +412,7 @@
       "allooloo_node": "sg-cm-kg",
       "record_door": "https://mcp.sg-cm-kg.ai/mcp",
       "agent_card": "https://agent.sg-cm-kg.ai/.well-known/agent-card.json",
-      "duty": "MAS product due diligence"
+      "duty": null
     },
     {
       "code": "IN",
