@@ -66,7 +66,7 @@ The sequence is mission, schema, source reading, field population, validation, p
 
 ## Machine files
 
-- registry.json — the members in registry order (written by the nightly eco-ops agent)
+- registry.json — the members in registry order (written by the eco-ops agent every week, after the Friday close)
 - https://sm-eco-10060.org/nodes.json · /protocol.json · /llms.txt
 - the Book of Markets chapters: one chapter manifest per market (C:\ALLOOLOO\BOOK, mirrored to the ops store)
 
